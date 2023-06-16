@@ -2,7 +2,7 @@ import styles from './Button.module.scss';
 
 export interface IButtonProps {
   label: string;
-  variant: any;
+  variant: string;
   onClick: () => void;
 }
 
