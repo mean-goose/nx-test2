@@ -6,11 +6,6 @@ export interface IButtonProps {
   onClick: () => void;
 }
 
-export interface IPerson {
-  firstName: string;
-  lastName: string;
-}
-
 export function Button({ label, variant, onClick }: IButtonProps) {
   return (
     <button
