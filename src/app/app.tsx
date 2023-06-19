@@ -3,6 +3,7 @@ import styles from './app.module.scss';
 
 import { Button } from 'src/components';
 import NxWelcome from './nx-welcome';
+import React from 'react';
 
 export function App() {
   const onClickHandler = () => {
@@ -11,7 +12,7 @@ export function App() {
 
   return (
     <div>
-      <Button label="My Button" variant="primary" onClick={onClickHandler} />
+      <Button label="My Button" onClick={onClickHandler} />
       <NxWelcome title="nx-test2" />
     </div>
   );

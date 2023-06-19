@@ -14,7 +14,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {},
-    "jsx": "react",
+    "jsx": "preserve",
     "allowJs": false,
     "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,

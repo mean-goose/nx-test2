@@ -22,7 +22,7 @@
           "executor": "nx:run-commands",
           "options": {
             "commands": ["tsc -p tsconfig.json --noEmit"],
-            "cwd": "./src/**",
+            "cwd": "./src/**/*",
             "forwardAllArgs": false
           }
         }
