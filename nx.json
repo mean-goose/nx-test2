@@ -59,7 +59,6 @@
       },
       "component": {
         "style": "none",
-        "storybook": "stories",
         "pascalCaseFiles": true,
         "pascalCaseDirectory": true
       },

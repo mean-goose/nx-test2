@@ -2,8 +2,11 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./dist/out-tsc",
-    "types": ["node", "vite/client"]
+    // passing the types Array empty prevents type errors from node_modules.
+    // Excluding node_modules in eslintignore and the ts.configs unfortunately doesn't do the work
+    "types": []
   },
+  // including the following files prevents "...module.scss not found" error when typechecking
   "files": [
     "./node_modules/@nx/react/typings/cssmodule.d.ts",
     "./node_modules/@nx/react/typings/image.d.ts"

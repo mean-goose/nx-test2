@@ -1,5 +1,8 @@
 {
-  "extends": ["plugin:@nx/react"],
+  "extends": ["plugin:@nx/react", "airbnb", "airbnb-typescript"],
+  "parserOptions": {
+    "project": "./tsconfig.app.json"
+  },
   "root": true,
   "ignorePatterns": ["!**/*"],
   "plugins": ["@nx"],

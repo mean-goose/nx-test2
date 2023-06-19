@@ -1,9 +1,5 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './app.module.scss';
-
-import { Button } from 'src/components';
-import NxWelcome from './nx-welcome';
 import React from 'react';
+import { Button } from 'src/components';
 
 export function App() {
   const onClickHandler = () => {
@@ -12,8 +8,7 @@ export function App() {
 
   return (
     <div>
-      <Button label="My Button" onClick={onClickHandler} />
-      <NxWelcome title="nx-test2" />
+      <Button label="My Button" variant="primary" onClick={onClickHandler} />
     </div>
   );
 }
