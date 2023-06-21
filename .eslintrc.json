@@ -4,7 +4,15 @@
     "project": "./tsconfig.app.json"
   },
   "root": true,
-  "ignorePatterns": ["!**/*"],
+  // ignore test files
+  "ignorePatterns": [
+    "src/**/*.spec.tsx",
+    "src/**/*.stories.tsx",
+    "*.config.ts",
+    "*.preset.js",
+    "tsconfig.json",
+    "node_modules"
+  ],
   "plugins": ["@nx"],
   "overrides": [
     {

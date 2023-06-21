@@ -1,5 +1,5 @@
 import type { Meta } from '@storybook/react';
-import { App } from './app';
+import App from './app';
 
 const Story: Meta<typeof App> = {
   component: App,

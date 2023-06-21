@@ -1,10 +1,8 @@
 import React from 'react';
 import { Button } from 'src/components';
 
-export function App() {
-  const onClickHandler = () => {
-    alert('Hello World');
-  };
+function App() {
+  const onClickHandler = () => 's';
 
   return (
     <div>

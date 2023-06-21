@@ -7,11 +7,10 @@ export interface IButtonProps {
   onClick: () => void;
 }
 
-console.log('hello');
-
 export function Button({ label, variant, onClick }: IButtonProps) {
   return (
     <button
+      aria-label="button"
       type="button"
       className={`${styles[variant]} border border-4 border-danger m-4`}
       onClick={onClick}

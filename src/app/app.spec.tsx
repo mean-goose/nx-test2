@@ -1,4 +1,6 @@
-import { render } from '@testing-library/react';
+import React from 'react';
+
+import { render, fireEvent, screen } from '@testing-library/react';
 
 import App from './app';
 
@@ -7,9 +9,12 @@ describe('App', () => {
     const { baseElement } = render(<App />);
     expect(baseElement).toBeTruthy();
   });
+  it('should click', () => {
+    const { baseElement } = render(<App />);
 
-  it('should have a greeting as the title', () => {
-    const { getByText } = render(<App />);
-    expect(getByText(/Welcome nx-test2/gi)).toBeTruthy();
+    const button = screen.getByRole('button', {
+      name: 'button',
+    });
+    fireEvent.click(button);
   });
 });

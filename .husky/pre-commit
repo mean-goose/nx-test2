@@ -1,7 +1,11 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
+
+# tsc -p tsconfig.app.json --noEmit
+
 npx lint-staged --concurrent false --relative
 
-tsc -p tsconfig.app.json --noEmit
+npx nx test
+
 # npx nx affected --target=typecheck

@@ -1,11 +1,26 @@
 # TODO
 
+<style>
+    .done {
+       color: limegreen 
+    }
+</style>
+
 <ul>
     <li>
-        nx affected in husky pre-commit is running on 0 projects. Why? Needs to be fixed
+        nx affected in husky pre-commit is running on 0 projects. Why? Needs to be fixed (for tests, not for type check --> package.json needs a script for "affected")
     </li>
     <li>
-        linter doesn't show warnings in components like "any" types and console.log() <span style="color: limegreen">DONE</span>
+        linter doesn't show warnings in components like "any" types and console.log() <span class="done">DONE</span>
+    </li>
+    <li>
+        jest setup does not work (couldn't find types) <span class="done">DONE</span>
+    </li>
+    <li>
+        npm test --> nx test does run a loop and doesn't start the tests, why? <span class="done">DONE</span>
+    </li>
+    <li>
+        nx serve cannot find a configuration, why? <span class="done">DONE</span>
     </li>
 </ul>
 <br>
