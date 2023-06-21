@@ -14,7 +14,6 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {},
-    // "preserve" is the setting, that makes it unneccesary to import React in each component and still doesn't throw an error when typechecking
     "jsx": "react-jsx",
     "allowJs": false,
     "esModuleInterop": false,
