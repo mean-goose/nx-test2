@@ -6,7 +6,8 @@
     "start": "nx serve",
     "build": "nx build",
     "test": "nx test",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "affected": "nx affected --silent --noStackTrace --target=test"
   },
   "private": true,
   "dependencies": {
