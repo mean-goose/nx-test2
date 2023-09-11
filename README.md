@@ -8,7 +8,7 @@
 
 <ul>
     <li>
-        nx affected in husky pre-commit is running on 0 projects. Why? Needs to be fixed (for tests, not for type check --> package.json needs a script for "affected")
+        nx affected in husky pre-commit is running on 0 projects. Why? Needs to be fixed (for tests, not for type check --> package.json needs a script for "affected") <span class="done">DONE</span>
     </li>
     <li>
         linter doesn't show warnings in components like "any" types and console.log() <span class="done">DONE</span>
@@ -23,6 +23,36 @@
         nx serve cannot find a configuration, why? <span class="done">DONE</span>
     </li>
 </ul>
+<br>
+<br>
+
+# NX Generators
+
+NOTE: If you have npx installed globally, you can skip the "npx" at the beginning of the command
+<br>
+
+To generate a component use (the --directory flag is optional, but most likely you want to place the new component in a certain folder):
+
+```
+npx nx g @nx/react:component NewComponentName --directory=components
+```
+
+Or the shorter version:
+
+```
+npx nx g c NewComponentName --directory=components
+```
+
+Story
+
+```
+npx nx g component-story
+```
+
+This will generate a folder with the given name and inside that folder will generate the NewComponentName.tsx component and a .spec.tsx test file with a simple render test.
+We omit the auto-generation of a style file (.scss in this project) as we mostly use bootstrap classes and don't want to clutter the folders unnecessarily.
+
+Unfor
 <br>
 <br>
 
@@ -89,3 +119,5 @@ Nx comes with local caching already built-in (check your `nx.json`). On CI you m
 - [Follow us on Twitter](https://twitter.com/nxdevtools)
 
 # nx-test2
+# os-test
+# os-test
