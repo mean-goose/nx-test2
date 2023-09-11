@@ -7,6 +7,7 @@ function App() {
   return (
     <div>
       <Button label="My Button" variant="primary" onClick={onClickHandler} />
+      HELLO WORLD
     </div>
   );
 }
